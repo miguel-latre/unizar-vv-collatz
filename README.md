@@ -9,8 +9,8 @@ Plantilla de proyecto de IntelliJ para resolver el
 
 Se define la siguiente secuencia iterativa sobre el domino de los enteros positivos:
 
- - _n_ → _n_/2 (si _n_ es par)
- - _n_ → 3_n_ + 1 (si _n_ es impar)
+ - _n_ → _n_ / 2   (si _n_ es par)
+ - _n_ → 3 _n_ + 1 (si _n_ es impar)
     
 Utilizando dicha definición y empezando en 13, se genera la siguiente secuencia:
 
@@ -27,8 +27,7 @@ superen el límite de un millón.
 
 ### Tareas
 
- 1. Descargad el proyecto «ProblemaCollatz» de Moodle[].
-    - O clonadlo de GitHub.
+ 1. Descargad o clonad el proyecto «unizar-vv-collatz» de GitHub.
  2. Observad las clases `SecuenciaCollatz`,`Main` y sus métodos.
  3. Clase `SecuenciasCollatzTestSiguiente`
     - Diseñad pruebas basadas en la especificación para el método 
@@ -45,7 +44,7 @@ superen el límite de un millón.
  
  4. Clase `SecuenciasCollatzTestLongitud`
     - Diseñad pruebas basadas en la especificación para el método 
-      `longitudCollatz` aplicando particiones de equivalencia.
+      `longitud` aplicando particiones de equivalencia.
     - Por cada prueba diseñada, escribid un test, comprobad que falla, añadid 
       código para que pase y comprobad la cobertura.
     - Convertidlo en un test parametrizado.
