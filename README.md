@@ -7,7 +7,7 @@ Plantilla de proyecto de IntelliJ para resolver el
 
 ### Secuencias de Collatz
 
-Se define la siguiente secuencia iterativa sobre el domino de los enteros positivos:
+Se define la siguiente secuencia iterativa sobre el dominio de los enteros positivos:
 
  - _n_ → _n_ / 2   (si _n_ es par)
  - _n_ → 3 _n_ + 1 (si _n_ es impar)
