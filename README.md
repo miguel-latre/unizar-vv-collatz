@@ -28,6 +28,10 @@ superen el límite de un millón.
 ### Tareas
 
  1. Descargad o clonad el proyecto «unizar-vv-collatz» de GitHub.
+ 2. El proyecto está configurado para poder utilizar tanto JUnit 4 como JUnit 5.
+    Para evitar mezclar clases del mismo nombre que están en los dos entornos,
+    se recomienda eliminar una de las dos dependencias (menú ``File > 
+    Project Structure... > Project Settings > Modules``).
  2. Observad las clases `SecuenciaCollatz`,`Main` y sus métodos.
  3. Clase `SecuenciasCollatzTestSiguiente`
     - Diseñad pruebas basadas en la especificación para el método 
@@ -38,24 +42,27 @@ superen el límite de un millón.
         - Añadid el código necesario para que el test pase.
         - Comprobad que la cobertura del método `siguienteCollatz` en modo 
           _tracing_ es del 100%.
+    - Usad la secuencia de ejemplo del enunciado como _test basis_ para obtener
+      casos de prueba adicionales, aunque sean redundantes.  
     - Convertid las pruebas diseñadas en un test JUnit parametrizado.
-    - Usad el ejemplo anterior para obtener casos de prueba adicionales, aunque
-      sean redundantes.  
  
  4. Clase `SecuenciasCollatzTestLongitud`
     - Diseñad pruebas basadas en la especificación para el método 
-      `longitud` aplicando particiones de equivalencia.
-    - Por cada prueba diseñada, escribid un test, comprobad que falla, añadid 
-      código para que pase y comprobad la cobertura.
-    - Convertidlo en un test parametrizado.
-        - Usad el ejemplo anterior para obtener casos adicionales de prueba.
- 
+      `longitud`.
+      - Basaos, por una parte, en la secuencia de ejemplo del enunciado. 
+        Se trata de una única secuencia, pero podemos distinguir 9 subsecuencias
+        más que terminan en 1.
+      - Completad los casos de prueba calculando _a mano_ las longitudes de las
+        secuencias iniciadas por los números del 1 al 10.
+    - Escribid un test parametrizado en el que ir incluyendo las pruebas diseñadas.
+      Incluirlas de una en una y observad como va aumentando la cobertura del
+      código conforme las vais añadiendo.
+      
  5. Clase `IniciadorSecuenciaMasLargaTest`
-    - Diseño de pruebas basadas en la especificación.
+    - Diseño de pruebas basadas en la especificación (basaos en las longitudes
+      de las secuencias iniciadas por los números del 1 al 10 que habéis
+      calculado antes).
     - Proponed los casos de prueba.
  
- 7. Clase `SecuenciasCollatzTestSuite`
-    - Suite JUnit que incluya las otras clases de tests.           
- 
  6. Resto de métodos
-    - Añadid pruebas hasta alcanzar una cobertura del 100% en modo tracing.
+    - Añadid pruebas hasta alcanzar una cobertura del 100% en modo _tracing_.
