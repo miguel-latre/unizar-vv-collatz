@@ -47,8 +47,7 @@ superen el límite de un millón.
     - Convertid las pruebas diseñadas en un test JUnit parametrizado.
  
  4. Clase `SecuenciasCollatzTestLongitud`
-    - Diseñad pruebas basadas en la especificación para el método 
-      `longitud`.
+    - Diseñad pruebas para el método `longitud`.
       - Basaos, por una parte, en la secuencia de ejemplo del enunciado. 
         Se trata de una única secuencia, pero podemos distinguir 9 subsecuencias
         más que terminan en 1.
@@ -62,7 +61,6 @@ superen el límite de un millón.
     - Diseño de pruebas basadas en la especificación (basaos en las longitudes
       de las secuencias iniciadas por los números del 1 al 10 que habéis
       calculado antes).
-    - Proponed los casos de prueba.
  
  6. Resto de métodos
     - Añadid pruebas hasta alcanzar una cobertura del 100% en modo _tracing_.
